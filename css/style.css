@@ -26,8 +26,11 @@ body {
 
 /* mobile */
 
-@media (max-width: 560px) {
- 
+@media (max-width: 600px) {
+
+ .header .links  .menu{
+  display: block;
+  }
   .header{
     width: 100vw;
 
@@ -40,10 +43,8 @@ visibility: visible;
 
 }}
 /* small */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+@media (min-width: 767px) {
+ 
 }
 
 /* medium */
@@ -64,7 +65,11 @@ visibility: visible;
 
 @media only screen and (max-width: 480px) {
   .container {
-    width: 466px;
+    width: 360px;
+    overflow: hidden;
+  }
+  .header{
+    width: 100%;
   }
 }
 /* End media query */
@@ -78,13 +83,24 @@ visibility: visible;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  height: 40px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+
 }
 
 .header .links ul {
   display: flex;
   gap: 30px;
   list-style: none;
+  font-size: 13px;
+}
+.header .links ul::before {
+background-color: #009688;
+position: absolute;
+left: 0;
+width: 20px;
+height: 40px;
 }
 .header .links ul li a {
   color: white;
@@ -93,6 +109,13 @@ visibility: visible;
 
 .drop-list li {
   display: none;
+}
+.header .links  li a .dropdown:hover ol .drop-list li {
+  display: inline-block;
+}
+
+.header .links  .menu{
+display: none;
 }
 .header .links ul li:hover .dropdown ol .drop-list {
   display: inline-block;
@@ -132,6 +155,19 @@ visibility: visible;
 .our-team .container {
   text-align: center;
   margin-bottom: 10px;
+}
+.our-team .text{
+  text-align: center;
+  width: 360px;
+  margin-bottom: 10px;
+}
+.our-team  .text h2 {
+  margin-bottom: 10px;
+
+}
+.our-team  .text p {
+  margin-bottom: 10px;
+
 }
 .our-team .container .text {
   font-weight: 400;
@@ -228,7 +264,7 @@ z-index: 99;
 
 .footer {
   background-color: black;
-  
+  width: 100%;
   height: 100px;
   position: relative;
 }
