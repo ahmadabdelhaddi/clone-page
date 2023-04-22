@@ -28,9 +28,7 @@ body {
 
 @media (max-width: 600px) {
 
- .header .links  .menu{
-  display: block;
-  }
+
   .header{
     width: 100vw;
 
@@ -38,10 +36,11 @@ body {
   .header .links {
     visibility: hidden;
   }
-  .header .links .menu a{
-visibility: visible;
 
-}}
+  .header .menu{
+    visibility: visible;
+  }
+}
 /* small */
 @media (min-width: 767px) {
  
@@ -71,6 +70,10 @@ visibility: visible;
   .header{
     width: 100%;
   }
+  .header .links li .menu{
+    display: inline-block;
+    }
+
 }
 /* End media query */
 
@@ -114,8 +117,8 @@ height: 40px;
   display: inline-block;
 }
 
-.header .links  .menu{
-display: none;
+.header  .menu{
+  display: none;
 }
 .header .links ul li:hover .dropdown ol .drop-list {
   display: inline-block;
@@ -158,7 +161,6 @@ display: none;
 }
 .our-team .text{
   text-align: center;
-  width: 360px;
   margin-bottom: 10px;
 }
 .our-team  .text h2 {
