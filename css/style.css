@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: "Times New Roman";
+  font-family: "sans-serif";
 }
 
 .container {
@@ -37,7 +37,7 @@ body {
     visibility: hidden;
   }
 
-  .header .menu{
+  .header #menu {
     visibility: visible;
   }
 }
@@ -320,6 +320,9 @@ z-index: 99;
 }
 .contact .text,.form{
 
+}
+.contact .text p{
+  font-weight: 600;
 }
 .contact .text ul {
   list-style: none;
