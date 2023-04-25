@@ -41,6 +41,22 @@ body {
     visibility: visible;
   }
 }
+
+/* mobile  */
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 360px;
+    overflow: hidden;
+  }
+  .header{
+    width: 100%;
+  }
+  .header .links li .menu{
+    display: inline-block;
+    }
+
+}
 /* small */
 @media (min-width: 767px) {
  
@@ -62,19 +78,6 @@ body {
 }
 
 
-@media only screen and (max-width: 480px) {
-  .container {
-    width: 360px;
-    overflow: hidden;
-  }
-  .header{
-    width: 100%;
-  }
-  .header .links li .menu{
-    display: inline-block;
-    }
-
-}
 /* End media query */
 
 /* Start Header  */
